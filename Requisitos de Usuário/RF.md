@@ -4,7 +4,7 @@
 
 | ID   |                                 Requisito                                 | Prioridade | Requisitos Relacionados |
 | :--: | :-----------------------------------------------------------------------: | :--------: | :---------: |
-| RF01 |           O cliente deve poder pagar com cartão.                          |  Alto      |      -      |
+| RF01 |           O cliente deve poder pagar com várias formas de pagamento (cartão, PIX, Boleto).                          |  Alto      |      -      |
 | RF02 |           O cliente deve poder acessar as suas compras no site.           |  Alta      |      -      |
 | RF03 |           O usuário deve poder ver seu histórico de compras.              |  Baixa     |      -      |
 | RF04 |           O cliente deve poder ver os produtos que estão na venda.        |  Alta      |      -      |
