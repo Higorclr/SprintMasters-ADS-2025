@@ -5,11 +5,11 @@
 | ID   |                                 Requisito                                 | Prioridade | Requisitos Relacionados |
 | :--: | :-----------------------------------------------------------------------: | :--------: | :---------: |
 | RF01 |           O cliente deve poder pagar com cartão.                          |  Alto      |      -      |
-| RF02 |           O Cliente deve poder acessar as suas compras no site.           |  Alta      |      -      |
+| RF02 |           O cliente deve poder acessar as suas compras no site.           |  Alta      |      -      |
 | RF03 |           O usuário deve poder ver seu histórico de compras.              |  Baixa     |      -      |
 | RF04 |           O cliente deve poder ver os produtos que estão na venda.        |  Alta      |      -      |
-
-
+| RF05 |        O cliente deve poder ter uma forma de contatar o suporte.          |  Alta      |      -      |
+| RF06 |        O cliente quer implementar um chatbot para o suporte.              |  Média     |     RF05    |   
 <div style="text-align: center">
 <p>Tabela 1: Requisitos Funcionais</p>
 </div>
