@@ -84,6 +84,40 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
         </tr>
         <tr>
+            <span id="ustory-01"></span>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US05</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Como funcionário de suporte, eu quero registrar chamados de atendimento (tickets) para acompanhar e resolver as solicitações dos clientes.
+</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">
+              <ol>
+                <li>Dados do Chamado: Cada chamado deve ter, no mínimo, um número de identificação, a descrição do problema e um status (ex: "Aberto", "Em Andamento", "Resolvido").</li>
+                <li>Gerenciamento: O funcionário deve poder atualizar o status e adicionar comentários internos em um chamado existente.</li>
+                <li>Notificação: O cliente deve receber uma notificação por e-mail sempre que o status do seu chamado for alterado.</li>
+              </ol>
+            </td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"> Alta </td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+        </tr>
+        <tr>
+            <span id="ustory-01"></span>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US06</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Como administrador, eu quero cadastrar e editar produtos no catálogo para manter o site atualizado
+com informações corretas.</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">
+              <ol>
+                <li>Acesso: O administrador deve ter acesso a uma área para cadastrar novos produtos e editar os existentes.</li>
+                <li>Campos Obrigatórios: Para salvar um produto, é necessário preencher nome, descrição, preço, categoria e quantidade em estoque.</li>
+                <li>Validação: O sistema não deve permitir salvar um produto se algum dos campos obrigatórios estiver em branco.</li>
+                <li>Publicação Imediata: Após salvar, qualquer criação ou alteração no produto deve ser refletida instantaneamente no site para os clientes.</li>
+              </ol>
+            </td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle"> Alta </td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle">-</td>
+        </tr>
+        <tr>
+            
 </table>
 
 <div style="text-align: center">
