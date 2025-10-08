@@ -35,7 +35,7 @@ A Tabela 3 a seguir contém as Histórias de Usuárias elicitadas.
         <tr>
             <span id="ustory-01"></span>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">US02</td>
-            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Como cliente, eu quero pagar com diferentes métodos (cartão, PIX, boleto), para que eu tenha flexibilidade na forma de pagamento.
+            <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">Como cliente, eu quero pagar com diferentes métodos (Cartão, PIX, Boleto), para que eu tenha flexibilidade na forma de pagamento.
 </td>
             <td style="border-style:solid;border-width:1px;text-align:center;vertical-align:middle" rowspan="1">
               <ol>
