@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SprintMasters - Página Inicial</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+        <a href="index.html" class="logo"><img src="imagens/SprintMastersLogo.png" alt="Logo" style="height: 40px;"></a>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a>
+                    <div class="dropdown mega-menu">
+                        <div class="mega-menu-column"><h4>Periféricos</h4><a href="produtos.html#teclados">Teclados</a><a href="produtos.html#mouses">Mouses</a><a href="produtos.html#mousepads">Mousepads</a><a href="produtos.html#headsets">Headsets</a></div>
+                        <div class="mega-menu-column"><h4>Componentes</h4><a href="produtos.html#placas-de-video">Placas de Vídeo</a><a href="produtos.html#memorias">Memória RAM</a><a href="produtos.html#ssds">SSDs</a></div>
+                        <div class="mega-menu-column"><h4>Outros</h4><a href="trabalhe.html">Trabalhe Conosco</a><a href="destaque.html">Destaque</a></div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="quemsomos.html" class="nav-link">Quem Somos</a></li>
+                <li class="nav-item"><a href="destaque.html" class="nav-link">Lançamentos</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="search-bar"><input type="text" id="search-bar" placeholder="Buscar produtos..."><button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button></div>
+            <button class="icon-btn"><i class="fa-solid fa-user"></i></button>
+            <button class="icon-btn"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></button>
+        </div>
+        <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="featured-products">
+      <div class="container">
+        <h2 class="section-title">Alguns de Nossos Produtos</h2>
+        <div class="product-card">
+          <img src="imagens/Teclado/teclado.png" alt="Teclado Gamer">
+          <h3>TECLADOS GAMER</h3>
+          <p>Precisão e velocidade com switches mecânicos e iluminação RGB.</p>
+          <a href="produtos.html#teclados" class="btn-buy">VER PRODUTOS</a>
+        </div>
+        <div class="product-card">
+          <img src="imagens/Mouse/mouse.png" alt="Mouse Gamer">
+          <h3>MOUSES GAMER</h3>
+          <p>Controle absoluto com sensores de alta precisão e design ergonômico.</p>
+          <a href="produtos.html#mouses" class="btn-buy">VER PRODUTOS</a>
+        </div>
+        <div class="product-card">
+          <img src="imagens/Memória RAM/memoria-vengeance.png" alt="Memórias Gamer">
+          <h3>MEMÓRIAS DE ALTA PERFORMANCE</h3>
+          <p>Experiencie a qualidade e velocidade com as memórias.</p>
+          <a href="produtos.html#memorias" class="btn-buy">VER PRODUTOS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="copyright">Desenvolvido por SprintMasters | Projeto Acadêmico - 2025</div>
+    </div>
+  </footer>
+</body>
+</html>
