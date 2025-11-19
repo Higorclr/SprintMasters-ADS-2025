@@ -28,10 +28,10 @@
         <div class="header-actions">
             <div class="search-bar"><input type="text" id="search-bar" placeholder="Buscar produtos..."><button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button></div>
             
-            <a href="login.html" class="icon-btn fa-solid fa-user"></a>
-            <a href="carrinho.html" class="icon-btn fa-solid fa-cart-shopping">
-              <span class="cart-count">0</span>
-            </a>
+            <a href="login.html" class="icon-btn"><i class="fa-solid fa-user"></i></a>
+            
+            <button class="icon-btn"><i class="fa-solid fa-heart"></i></button>
+            <a href="carrinho.html" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count">0</span></a>
         </div>
         <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
     </div>
@@ -62,6 +62,17 @@
       </div>
     </section>
   </main>
+
+  <div id="chat-modal" class="modal-backdrop">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2>Suporte Online</h2>
+      <div class="chat-box"><div class="chat-message bot">Olá! Como posso ajudar?</div></div>
+      <div class="chat-input-area"><input type="text" placeholder="Digite sua mensagem..."><button class="btn-buy" style="margin:0; padding: 10px;">Enviar</button></div>
+    </div>
+  </div>
+
+  <button class="chat-widget"><i class="fa-solid fa-comments"></i></button>
   <footer><div class="container footer-content"><div class="copyright">Desenvolvido por SprintMasters | Projeto Acadêmico - 2025</div></div></footer>
   <script src="main.js" defer></script>
 </body>
