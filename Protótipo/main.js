@@ -8,12 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if(searchButton) searchButton.addEventListener('click', redirectToSearch);
-  
-  if(searchBar) {
-    searchBar.addEventListener('keyup', (event) => {
-      if (event.key === 'Enter') {
-        redirectToSearch();
-      }
-    });
+  if(searchBar) searchBar.addEventListener('keyup', (e) => { if (e.key === 'Enter') redirectToSearch(); });
+
+  const chatBtn = document.querySelector('.chat-widget');
+  const chatModal = document.getElementById('chat-modal');
+  if(chatBtn && chatModal) {
+      chatBtn.addEventListener('click', () => chatModal.classList.add('show'));
+      chatModal.addEventListener('click', (e) => {
+          if (e.target === chatModal || e.target.classList.contains('modal-close')) {
+              chatModal.classList.remove('show');
+          }
+      });
   }
 });
