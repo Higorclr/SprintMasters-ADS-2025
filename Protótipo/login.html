@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SprintMasters - Login</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="imagens/SprintMastersLogo.png" alt="Logo">
+            </a>
+
+            <div class="header-actions">
+                <a href="carrinho.html" class="icon-btn fa-solid fa-cart-shopping">
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="auth-header">
+                <h1>Bem-vindo</h1>
+                <p>Entre na sua conta ou crie uma nova</p>
+            </div>
+
+            <div class="auth-tabs">
+                <button class="auth-tab active" onclick="switchTab('login')">Entrar</button>
+                <button class="auth-tab" onclick="switchTab('register')">Criar Conta</button>
+            </div>
+
+            <div id="successMessage" class="success-message"></div>
+            <div id="errorMessage" class="error-message"></div>
+
+            <form id="loginForm" class="auth-form active" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="loginEmail">E-mail</label>
+                    <input type="email" id="loginEmail" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Senha</label>
+                    <div class="password-toggle">
+                        <input type="password" id="loginPassword" placeholder="Digite sua senha" required>
+                        <button type="button" onclick="togglePassword('loginPassword')"><i class="icon-btn fa-solid fa-eye"></i></button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        <span>Lembrar-me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Esqueci minha senha</a>
+                </div>
+
+                <button type="submit" class="btn-submit">Entrar</button>
+
+                <div class="divider">ou continue com</div>
+
+                <div class="social-login">
+                    <button type="button" class="btn-social" onclick="socialLogin('google')">
+                        <i class="icon-btn fa-brands fa-google"></i>
+                        <span>Continuar com Google</span>
+                    </button>
+                    <button type="button" class="btn-social" onclick="socialLogin('facebook')">
+                        <i class="icon-btn fa-brands fa-facebook-f"></i>
+                        <span>Continuar com Facebook</span>
+                    </button>
+                </div>
+            </form>
+
+            <form id="registerForm" class="auth-form" onsubmit="handleRegister(event)">
+                <div class="form-group">
+                    <label for="registerName">Nome Completo</label>
+                    <input type="text" id="registerName" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerEmail">E-mail</label>
+                    <input type="email" id="registerEmail" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerPassword">Senha</label>
+                    <div class="password-toggle">
+                        <input type="password" id="registerPassword" placeholder="Mínimo 8 caracteres" required minlength="8">
+                        <button type="button" onclick="togglePassword('registerPassword')"><i class="icon-btn fa-solid fa-eye"></i></button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirmar Senha</label>
+                    <div class="password-toggle">
+                        <input type="password" id="registerConfirmPassword" placeholder="Digite a senha novamente" required>
+                        <button type="button" onclick="togglePassword('registerConfirmPassword')"><i class="icon-btn fa-solid fa-eye"></i></button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Criar Conta</button>
+
+                <div class="divider">ou cadastre-se com</div>
+
+                <div class="social-login">
+                    <button type="button" class="btn-social" onclick="socialLogin('google')">
+                        <i class="icon-btn fa-brands fa-google"></i>
+                        <span>Cadastrar com Google</span>
+                    </button>
+                    <button type="button" class="btn-social" onclick="socialLogin('facebook')">
+                        <i class="icon-btn fa-brands fa-facebook-f"></i>
+                        <span>Cadastrar com Facebook</span>
+                    </button>
+                </div>
+
+                <div class="terms">
+                    Ao criar uma conta, você concorda com nossos 
+                    <a href="#">Termos de Uso</a> e 
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
