@@ -297,3 +297,84 @@ li img { vertical-align: middle; margin-right: 8px; }
     .filter-group { flex-direction: column; align-items: stretch; }
     .filter-group select { width: 100%; }
 }
+
+/* Estrelas de Avaliação (US03) */
+.product-rating {
+    color: #ffcc00; font-size: 0.9rem; margin-bottom: 10px;
+}
+
+/* Modais (Geral - Usado para Compra e Chat) */
+.modal-backdrop {
+    display: none; position: fixed; z-index: 2000; left: 0; top: 0;
+    width: 100%; height: 100%; overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center; align-items: center;
+}
+.modal-backdrop.show { display: flex; }
+
+/* Caixa do Modal */
+.modal-content {
+    background-color: var(--bg-primary); color: var(--text-primary);
+    margin: auto; padding: 30px; border: 1px solid var(--border);
+    border-radius: 10px; width: 90%; max-width: 500px;
+    position: relative; text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Fechar Modal */
+.modal-close {
+    color: #aaa; position: absolute; top: 10px; right: 20px;
+    font-size: 28px; font-weight: bold; cursor: pointer;
+}
+.modal-close:hover { color: var(--hover); }
+
+.modal-content h2 { color: var(--hover); margin-bottom: 10px; }
+.modal-content p { font-size: 0.9rem; margin-bottom: 20px; }
+
+/* Detalhes do Produto no Modal de Compra */
+.modal-product-details {
+    display: flex; align-items: center; gap: 20px; text-align: left;
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    padding: 20px 0; margin-bottom: 20px;
+}
+.modal-product-details img {
+    width: 100px; height: 100px; object-fit: contain;
+    border: 1px solid var(--border); border-radius: 5px;
+}
+.modal-product-details h3 { color: var(--hover); font-size: 1.2rem; margin-bottom: 5px; }
+.modal-price { font-size: 1.1rem !important; font-weight: bold; color: var(--text-primary) !important; margin: 0 !important; }
+
+.modal-buttons { display: flex; justify-content: space-between; gap: 15px; }
+.modal-buttons .btn-buy { flex-grow: 1; }
+.modal-btn-checkout { background: transparent; border: 2px solid #ffcc00; color: #ffcc00; }
+.modal-btn-checkout:hover { background: #ffcc00; color: #000; }
+
+/* Ícones de Pagamento (US02) */
+.payment-icons {
+    display: flex; gap: 15px; justify-content: center;
+    margin-top: 15px; font-size: 24px; color: #ffcc00;
+}
+
+/* Botão de Chat Flutuante (US01) */
+.chat-widget {
+    position: fixed; bottom: 20px; right: 20px;
+    background-color: #ffcc00; color: #000;
+    width: 60px; height: 60px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000; text-decoration: none; transition: transform 0.3s;
+    cursor: pointer; border: none;
+}
+.chat-widget:hover { transform: scale(1.1); }
+
+/* Modal de Chat (Chat Box) */
+.chat-box {
+    height: 300px; border: 1px solid #333; background: #111;
+    border-radius: 5px; margin-bottom: 15px; padding: 10px;
+    overflow-y: auto; text-align: left;
+}
+.chat-message { margin-bottom: 10px; }
+.chat-message.bot { color: #ffcc00; }
+.chat-message.user { color: #fff; text-align: right; }
+.chat-input-area { display: flex; gap: 10px; }
+.chat-input-area input { flex-grow: 1; padding: 10px; border-radius: 5px; border: 1px solid #333; background: #000; color: #fff; }
